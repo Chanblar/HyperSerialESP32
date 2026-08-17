@@ -1,6 +1,6 @@
 # HyperSerialESP32
 
-Exposes a high-speed USB serial port at 2Mb baud for driving LED strips using the NeoPixelBus library. It’s intended to replace slow Arduino-based solutions (a 3.3V to 5V level shifter may be required). **A data-integrity check (Fletcher's checksum) is included in the new 'Awa' protocol for HyperHDR, eliminating random flashing caused by serial transmission errors.** This option must be enabled in HyperHDR for the system to work correctly, as shown in the configuration screenshot below.
+Exposes a high-speed USB serial port at 2Mb baud for driving LED strips using the NeoPixelBus library. It’s intended to replace slow Arduino-based solutions (a 3.3V to 5V level shifter may be required). **A data-integrity check   (Fletcher's checksum) is included in the new 'Awa' protocol for HyperHDR, eliminating random flashing caused by serial transmission errors.** This option must be enabled in HyperHDR for the system to work correctly, as shown in the configuration screenshot below.
 
 **Make sure that the serial chip on your ESP32 can handle 2Mb baud: for example, the CP2102 cannot, as its maximum speed is 1Mb. You can compile a version for that lower speed, but that defeats the purpose. The inexpensive CH340G handles 2Mb without issues, and the CH9102x should also work — even at 4Mb.**
 
